@@ -1,0 +1,56 @@
+.chatroom {
+    &__content {
+        border: 1px solid gray;
+        border-bottom: none;
+        padding: 15px 20px;
+        width: 500px;
+        height: 300px;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            display: none; 
+        }
+    }
+
+    &__shell {
+        width: 100%;
+        display: flex; 
+        justify-content: start;
+        align-items: center;
+
+        & + & {
+            margin-top: 10px;
+        }
+    }
+
+    &__message {
+        width: fit-content;
+        min-width: 30px;
+        text-align: center;
+        background-color: #efefef;
+        border-radius: 10px;
+        padding: 5px 10px;        
+    }
+
+    &__input {
+        width: 450px;
+        padding: 5px 10px;
+        border: 1px solid gray;
+    }
+
+    &__button {
+        width: 50px;
+        padding: 5px ;
+        background-color: white;
+        border: 1px solid gray;
+        border-left: none;
+    }
+}
+
+.right {
+    justify-content: end;
+}
+
+.myself {
+    background-color: #b5f892;
+}
